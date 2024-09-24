@@ -43,7 +43,7 @@ const features: FeatureItem[] = [
 ];
 
 const FeatureGrid: React.FC = () => {
-  const { theme } = useTheme();
+  // const { theme } = useTheme();
 
   const containerVariants = {
     hidden: { opacity: 0 },

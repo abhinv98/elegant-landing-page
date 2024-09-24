@@ -28,7 +28,7 @@ const contentBlocks: ContentBlockItem[] = [
 ];
 
 const ContentBlocks: React.FC = () => {
-  const { theme } = useTheme();
+  // const { theme } = useTheme();
 
   return (
     <section id="why-choose-us" className="py-20 bg-secondary-50 dark:bg-secondary-800 transition-colors duration-300">

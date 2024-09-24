@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { useTheme } from '../context/ThemeContext';
 import { SunIcon, MoonIcon } from '@heroicons/react/24/solid';
@@ -8,7 +8,7 @@ const Header: React.FC = () => {
   const [activeSection, setActiveSection] = useState('');
   const { theme, toggleTheme } = useTheme();
 
-  const navItems = ['Features', 'Why Choose Us', 'Testimonials',  'Contact'];
+  const navItems = useMemo(() => ['Features', 'Why Choose Us', 'Testimonials',  'Contact'], []);
 
   useEffect(() => {
     const handleScroll = () => {

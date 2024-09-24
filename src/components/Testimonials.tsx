@@ -31,7 +31,7 @@ const testimonials: TestimonialItem[] = [
 ];
 
 const Testimonials: React.FC = () => {
-  const { theme } = useTheme();
+  // const { theme } = useTheme();
 
   return (
     <section id="testimonials" className="py-20 bg-white dark:bg-secondary-900 transition-colors duration-300">

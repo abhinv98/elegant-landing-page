@@ -14,7 +14,7 @@ const schema = z.object({
 type FormData = z.infer<typeof schema>;
 
 const ContactForm: React.FC = () => {
-  const { theme } = useTheme();
+  // const { theme } = useTheme();
   const { register, handleSubmit, formState: { errors, isSubmitting }, reset } = useForm<FormData>({
     resolver: zodResolver(schema),
   });
