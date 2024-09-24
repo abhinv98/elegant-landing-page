@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { ThemeProvider } from './context/ThemeContext';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import FeatureGrid from './components/FeatureGrid';
+import Testimonials from './components/Testimonials';
+import ContentBlocks from './components/ContentBlocks';
+import ContactForm from './components/ContactForm';
+import Footer from './components/Footer';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider>
+      <div className="min-h-screen bg-white dark:bg-secondary-900 transition-colors duration-300">
+        <Header />
+        <main>
+          <Hero />
+          <FeatureGrid />
+          <ContentBlocks />
+          <Testimonials />
+          <ContactForm />
+        </main>
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
-}
+};
 
 export default App;
