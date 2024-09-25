@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { useTheme } from '../context/ThemeContext';
+
 import { ChartBarIcon, UsersIcon, LightBulbIcon } from '@heroicons/react/24/outline';
 
 interface ContentBlockItem {
@@ -28,7 +28,7 @@ const contentBlocks: ContentBlockItem[] = [
 ];
 
 const ContentBlocks: React.FC = () => {
-  // const { theme } = useTheme();
+  
 
   return (
     <section id="why-choose-us" className="py-20 bg-secondary-50 dark:bg-secondary-800 transition-colors duration-300">

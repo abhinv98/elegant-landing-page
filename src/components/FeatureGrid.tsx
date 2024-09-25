@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { useTheme } from '../context/ThemeContext';
+
 import { LightBulbIcon, UsersIcon, ChartBarIcon, LockClosedIcon, CogIcon, ClockIcon } from '@heroicons/react/24/outline';
 
 interface FeatureItem {
@@ -43,7 +43,7 @@ const features: FeatureItem[] = [
 ];
 
 const FeatureGrid: React.FC = () => {
-  // const { theme } = useTheme();
+  
 
   const containerVariants = {
     hidden: { opacity: 0 },

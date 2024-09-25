@@ -85,7 +85,7 @@ const Footer: React.FC = () => {
         </div>
         <div className={`mt-8 pt-8 border-t ${theme === 'dark' ? 'border-secondary-700' : 'border-secondary-200'}`}>
           <p className={`text-sm text-center ${theme === 'dark' ? 'text-secondary-300' : 'text-secondary-600'}`}>
-            &copy; 2023 AR, Inc. All rights reserved.
+            &copy; 2024 AR, Inc. All rights reserved.
           </p>
         </div>
       </div>

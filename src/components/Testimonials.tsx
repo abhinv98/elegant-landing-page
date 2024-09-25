@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { useTheme } from '../context/ThemeContext';
+
 
 interface TestimonialItem {
   quote: string;
@@ -31,7 +31,7 @@ const testimonials: TestimonialItem[] = [
 ];
 
 const Testimonials: React.FC = () => {
-  // const { theme } = useTheme();
+  
 
   return (
     <section id="testimonials" className="py-20 bg-white dark:bg-secondary-900 transition-colors duration-300">
